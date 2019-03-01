@@ -22,7 +22,7 @@ function changeTextLayerContent(doc, layerName, newTextString) {
     if (layerRef.typename === "ArtLayer") {
       if (layerRef.name === layerName && layerRef.kind === LayerKind.TEXT) {
         layerRef.textItem.contents = newTextString;
-		var file = new File("your file name + ".png");
+		var file = new File("your file name" + ".png");
 	
 		var opts, file;
         opts = new ExportOptionsSaveForWeb();
